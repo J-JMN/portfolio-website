@@ -1,0 +1,121 @@
+body.dark {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000000; 
+  color: #c9c9c9ee; 
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.light {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffffdbd; 
+  color: #000000; 
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body.dark a {
+  color: #f2f990; 
+  transition: color 0.3s ease;
+}
+
+body.light a {
+  color: #aba80d; 
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0 0.3rem;
+  }
+
+  .profile-pic {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid rgb(230, 220, 110);
+    box-shadow: 0 10px 40px rgba(230, 220, 110, 0.85);
+  }
+
+  header {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 340px;
+    height: auto;
+  }
+}
+
+
+
