@@ -9,7 +9,7 @@ body.dark {
 body.light {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #fffffdbd; 
+  background-color: #fffffff9; 
   color: #000000; 
   transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -38,7 +38,7 @@ body.dark a {
 }
 
 body.light a {
-  color: #aba80d; 
+  color: #c7d225; 
   transition: color 0.3s ease;
 }
 
