@@ -28,7 +28,7 @@ const Projects = () => {
     <section id="projects" tabIndex="-1" aria-labelledby="projects-title" className="projects-section">
       <h2 id="projects-title">Projects</h2>
       <div className="projects-container">
-        {projects.map(({ title, img, description }, index) => (
+        {projects.map(({ title, img, description, url }, index) => (
           <article
             key={index}
             className="project-card"
