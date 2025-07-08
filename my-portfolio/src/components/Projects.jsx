@@ -7,9 +7,10 @@ import project3Img from "../images/Project 3.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "Project 1",
+      title: "Tech Time Capsule",
       img: project1Img,
-      description: "A robust web-based e-commerce platform built using React and Node.js."
+      description: "A Tech history website that allows users to document milestones related to tech over the years and fetches data from wikipedia API",
+      url: "https://portfolio-website-eight-peach-20.vercel.app/"
     },
     {
       title: "Project 2",
@@ -36,8 +37,16 @@ const Projects = () => {
             aria-label={`Project: ${title}`}
             title={`${title}: ${description}`}
           >
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+              aria-label={`Visit ${title}`}
+            >
             <img src={img} alt={title} className="project-image" loading="lazy" />
             <div className="project-info">{title}</div>
+            </a>
           </article>
         ))}
       </div>
